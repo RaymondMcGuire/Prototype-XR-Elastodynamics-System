@@ -1,0 +1,16 @@
+=== GPU Kernel Profiling Summary ===
+
+Total Frames: 3000
+Total GPU Time: 20871.530 ms
+Average Frame Time: 6.957 ms
+
+Kernel Name                    Time %    Avg (ms)  Total (ms)     Calls Calls/Frame
+-------------------------------------------------------------------------------------
+SolveConstraints                81.8%       0.142   17066.478    120000        40.0
+UpdateStressVisualization        9.1%       0.630    1890.152      3000         1.0
+XPBDFinalize                     3.6%       0.006     759.581    120000        40.0
+CollideSDF                       2.8%       0.005     583.031    120000        40.0
+PredictPositions                 2.4%       0.004     507.785    120000        40.0
+UpdateSurfaceMesh                0.2%       0.013      39.078      3000         1.0
+CollideSDF_PreStep               0.1%       0.007      21.575      3000         1.0
+UpdateMotionConstraints          0.0%       0.001       3.850      3000         1.0

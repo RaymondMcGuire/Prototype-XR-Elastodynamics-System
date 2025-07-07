@@ -1,0 +1,70 @@
+{
+  "display_mode": "manual",
+  "manual_display": [
+    {
+      "type": "merged",
+	  "kernels": ["SolveConstraints", "UpdateMotionConstraints"],
+      "display_name": "Constraints Solver"
+    },
+    {
+      "type": "individual",
+      "kernel": "UpdateSurfaceMesh",
+      "display_name": "Surface Vertex Embedding"
+    },
+	{
+      "type": "individual",
+      "kernel": "UpdateStressVisualization",
+      "display_name": "Stress Mapping to Surface"
+    },
+    {
+      "type": "merged",
+      "display_name": "SDF Collision and Friction Handle",
+      "kernels": ["CollideSDF", "CollideSDF_PreStep"],
+      "color": "#FF9999"
+    },
+    {
+      "type": "merged",
+      "display_name": "Time Integration",
+      "kernels": ["PredictPositions", "XPBDFinalize"],
+      "color": "#99FF99"
+    }
+  ],
+  "chart_style": {
+    "figsize": [35, 10],
+    "title": "",
+    "title_fontsize": 14,
+    "use_external_labels": true,
+    "show_percentages": false,
+    "percentage_fontsize": 10,
+    "label_fontsize": 10,
+    "edge_color": "white",
+    "edge_width": 5,
+	 "ylabel_config": {
+	  "fontsize": 20,
+	  "fontweight": "bold",
+	  "color": "black",
+	  "use_bbox": false
+	},
+	 "xlabel_config": {
+      "text": "GPU Computational Time (%)",
+      "fontsize": 20,
+      "fontweight": "bold", 
+      "color": "black"
+    },
+    
+    "xtick_config": {
+      "fontsize": 20,
+      "fontweight": "bold",
+      "color": "black",
+      "rotation": 0
+    },
+	
+	"value_fontsize": 20,       
+    "value_fontweight": "bold",  
+    "value_color": "black"       
+  },
+  "color_scheme": "Set3",
+  "add_statistics_box": false,
+  "show_legend": false
+
+}

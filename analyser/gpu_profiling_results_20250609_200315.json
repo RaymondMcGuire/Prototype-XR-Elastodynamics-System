@@ -1,0 +1,89 @@
+{
+  "profiling_summary": {
+    "total_frames": 1226,
+    "total_gpu_time_ms": 8200.810,
+    "avg_frame_time_ms": 6.689
+  },
+  "kernel_statistics": [
+    {
+      "name": "CollideSDF",
+      "total_time_ms": 232.168,
+      "call_count": 49040,
+      "avg_time_ms": 0.005,
+      "min_time_ms": 0.004,
+      "max_time_ms": 0.071,
+      "percentage": 2.83,
+      "calls_per_frame": 40.00
+    },
+    {
+      "name": "CollideSDF_PreStep",
+      "total_time_ms": 8.933,
+      "call_count": 1226,
+      "avg_time_ms": 0.007,
+      "min_time_ms": 0.005,
+      "max_time_ms": 0.042,
+      "percentage": 0.11,
+      "calls_per_frame": 1.00
+    },
+    {
+      "name": "PredictPositions",
+      "total_time_ms": 209.208,
+      "call_count": 49040,
+      "avg_time_ms": 0.004,
+      "min_time_ms": 0.003,
+      "max_time_ms": 0.018,
+      "percentage": 2.55,
+      "calls_per_frame": 40.00
+    },
+    {
+      "name": "SolveConstraints",
+      "total_time_ms": 6549.533,
+      "call_count": 49040,
+      "avg_time_ms": 0.134,
+      "min_time_ms": 0.129,
+      "max_time_ms": 2.593,
+      "percentage": 79.86,
+      "calls_per_frame": 40.00
+    },
+    {
+      "name": "UpdateMotionConstraints",
+      "total_time_ms": 1.979,
+      "call_count": 1226,
+      "avg_time_ms": 0.002,
+      "min_time_ms": 0.001,
+      "max_time_ms": 0.043,
+      "percentage": 0.02,
+      "calls_per_frame": 1.00
+    },
+    {
+      "name": "UpdateStressVisualization",
+      "total_time_ms": 865.553,
+      "call_count": 1226,
+      "avg_time_ms": 0.706,
+      "min_time_ms": 0.598,
+      "max_time_ms": 2.775,
+      "percentage": 10.55,
+      "calls_per_frame": 1.00
+    },
+    {
+      "name": "UpdateSurfaceMesh",
+      "total_time_ms": 21.446,
+      "call_count": 1226,
+      "avg_time_ms": 0.017,
+      "min_time_ms": 0.014,
+      "max_time_ms": 0.120,
+      "percentage": 0.26,
+      "calls_per_frame": 1.00
+    },
+    {
+      "name": "XPBDFinalize",
+      "total_time_ms": 311.990,
+      "call_count": 49040,
+      "avg_time_ms": 0.006,
+      "min_time_ms": 0.005,
+      "max_time_ms": 0.024,
+      "percentage": 3.80,
+      "calls_per_frame": 40.00
+    }
+  ]
+}
